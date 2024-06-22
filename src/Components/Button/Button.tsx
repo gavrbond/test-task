@@ -1,6 +1,5 @@
 import React, { ReactNode } from "react"
 import { NavLink } from "react-router-dom"
-import { Nav } from "../Nav/Nav"
 import styles from "./button.module.scss"
 type ButtonProps = { children: ReactNode; path: string }
 export const Button = ({ children, path }: ButtonProps) => {
