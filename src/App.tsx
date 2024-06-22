@@ -1,7 +1,5 @@
 import React from "react"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
-import { Users } from "./Components/Users/Users"
-import { Nav } from "./Components/Nav/Nav"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Layout } from "./Components/Layout/Layout"
 import { Catalog } from "./Pages/Catalog/Catalog"

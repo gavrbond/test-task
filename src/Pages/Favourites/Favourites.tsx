@@ -1,5 +1,4 @@
 import React from "react"
-import { Albums } from "../../Components/Albums/Albums"
 import { Placeholder } from "../../Components/Placeholder/Placeholder"
 import { useAppSelector } from "../../redux/reduxHooks"
 import styles from "./Favourites.module.scss"

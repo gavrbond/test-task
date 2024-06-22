@@ -1,6 +1,5 @@
 import React from "react"
 import { Button } from "../Button/Button"
-import { NavLink } from "react-router-dom"
 import styles from "./Nav.module.scss"
 type ButtonName = {
   name: string

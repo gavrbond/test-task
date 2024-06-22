@@ -1,4 +1,3 @@
-// features/favoriteImages/favoriteImagesSlice.ts
 import { createSlice, PayloadAction } from "@reduxjs/toolkit"
 type FavoriteContent = {
   url: string
