@@ -1,26 +1,29 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-
+import React from "react"
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
+import { Users } from "./Components/Users/Users"
+import { Nav } from "./Components/Nav/Nav"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { Layout } from "./Components/Layout/Layout"
+import { Catalog } from "./Pages/Catalog/Catalog"
+import { Favourites } from "./Pages/Favourites/Favourites"
+import { Provider } from "react-redux"
+import { store } from "./redux/store"
+const queryClient = new QueryClient()
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Provider store={store}>
+      <QueryClientProvider client={queryClient}>
+        <BrowserRouter>
+          <Routes>
+            <Route path='/' element={<Layout />}>
+              <Route index element={<Catalog />} />
+              <Route path='/favorites' element={<Favourites />} />
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </QueryClientProvider>
+    </Provider>
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,19 @@
+.root {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 24px 0 24px 36px;
+}
+.albumWrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.icon {
+  color: #117dc1;
+  font-size: 32px;
+}

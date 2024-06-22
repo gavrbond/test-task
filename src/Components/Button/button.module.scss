@@ -1,0 +1,15 @@
+.btn {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #1c1c1c;
+  width: 100%;
+  text-align: center;
+}
+.active .btn {
+  color: #117dc1;
+  background-color: #edf9ff;
+  width: 100%;
+  border-radius: 16px;
+  padding: 16px 32px 16px 32px;
+}

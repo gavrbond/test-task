@@ -1,0 +1,38 @@
+.root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(135, 135, 135, 0.8);
+  z-index: 1000;
+}
+.modal {
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+.image {
+  width: 600px;
+  height: 600px;
+  object-fit: cover;
+  object-position: center;
+}
+.iconClose {
+  cursor: pointer;
+  position: absolute;
+  top: 25px;
+  right: 30px;
+  z-index: 3;
+  color: #fff;
+  font-size: 35px;
+}
+.noScroll {
+  overflow: hidden;
+}
